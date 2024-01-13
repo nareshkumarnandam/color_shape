@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(205, 205, 205);
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#outer{
+    background-color: green;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#inner{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+}
+
+#color, #shape{
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(78, 78, 255);
+    color: white;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.square{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+}
+
+.triangle{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.rectangle{
+    clip-path: polygon(0 21%, 100% 21%, 100% 80%, 0 81%);
+}
+.circle{
+    clip-path: circle(50% at 50% 50%);
+}
+.diamond{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.star{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.btnclick{
+    transform: scale(.5);
+}
