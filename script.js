@@ -1,5 +1,5 @@
 var arr = ["square", "triangle", "rectangle", "circle", "diamond", "star"];
-var color = [ "red",  "green",  "cyan",  "black",  "violet",  "blue",  "yellow",  "purple",  "orange",  "lightgreen",  "brown" , "orangered"];
+var color = [ "red", "cyan",  "black",  "violet",  "blue",  "yellow", "green", "purple",  "orange",  "lightgreen",  "brown" , "orangered"];
 
 let outer = document.getElementById("outer");
 let inner = document.getElementById("inner");
