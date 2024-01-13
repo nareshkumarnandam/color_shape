@@ -6,17 +6,31 @@ let inner = document.getElementById("inner");
 let colorbtn = document.getElementById("color");
 let shapebtn = document.getElementById("shape");
 
-var index = 0;
+// var index = 0;
 
-colorbtn.addEventListener("click", changeColor);
+// colorbtn.addEventListener("click", changeColor);
 
-function changeColor() {
-  if (index === color.length) {
-    index = 0;
-  }
-  outer.style.backgroundColor = color[index];
-  index++;
-}
+// function changeColor() {
+//   if (index === color.length) {
+//     index = 0;
+//   }
+//   outer.style.backgroundColor = color[index];
+//   index++;
+// }
+
+colorbtn.onclick = function () {
+    let style = inner.classList[0];
+    let flag = true;
+    let random;
+    while (flag) {
+      random = Math.floor(Math.random() * color.length);
+      if (style != color[random]) {
+        flag = false;
+      }
+    }
+    outer.classList.remove(style);
+    outer.style.backgroundColor = color[random];
+  };
 
 shapebtn.onclick = function () {
   let style = inner.classList[0];
